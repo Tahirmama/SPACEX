@@ -1,0 +1,22 @@
+.Head{
+    height: 100vh;
+    overflow: hidden auto;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:black;
+    color: white;
+}
+
+.Lnol{
+list-style: circle;
+padding: 0;
+
+}
+
+.LnItm{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(255, 251, 245);
+    cursor:pointer;
+}
