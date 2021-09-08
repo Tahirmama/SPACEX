@@ -1,18 +1,18 @@
 import React from 'react';
 import {useLaunchesQuery} from "../../generated/graphql";
-import Launch from "./Launch";
+import Launch , { OwnProps } from "./Launch";
 
 
-interface OwnProps {
-  id: number;
-}
-const Launch_Container = ()=>{
-    const{ data , error , loading }= useLaunchesQuery();
+
+
+const Launch_Container : React.FC<OwnProps> = (props)=>{
+    const{ data , error }= useLaunchesQuery()
+   
     
     if(error || !data){
         return<div>ERROR! </div>
     }
-    return <Launch data={data} />
+    return <Launch data={data}{...props} />
 }
 
 export default Launch_Container
