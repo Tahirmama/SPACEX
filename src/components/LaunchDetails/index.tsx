@@ -27,7 +27,9 @@ useEffect(() => {
     if (!data) {
         return <div>There is no data . Please select amission for it's details....</div>
     }
-    return <LaunchDetails data={data} />
+    return (
+      
+    <LaunchDetails data={data} />)
 }
 
 export default Launch_Details_Container;

@@ -7,6 +7,7 @@ interface Props {
     data: LaunchInfoQuery
 }
 const LaunchDetails: React.FC<Props> = ({ data }) => {
+    var date = new Date().getFullYear();
     if (!data.launch) {
         return (
             <div>
@@ -17,6 +18,10 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
     }
     return (
         <div className="Info">
+              <h4>
+        Copyrights @ Tahir {" "}
+        {date}
+    </h4>
             <div className="Details">
                 <span>
                     Flight Number: {data.launch.flight_number}

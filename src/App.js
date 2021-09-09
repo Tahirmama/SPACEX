@@ -4,7 +4,7 @@ import LaunchDetails from './components/LaunchDetails';
 import './App.css';
 
 function App() {
-  const [id, setId] = useState(42);
+  const [id, setId] = useState(48);
   const handleIdChange = useCallback(newId => {
     setId(newId);
   }, []);
@@ -12,6 +12,7 @@ function App() {
     <div className="App">
  <Launch handleIdChange={handleIdChange}/>
  <LaunchDetails id={id}/>
+
     </div>
   );
 }

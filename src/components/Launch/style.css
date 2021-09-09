@@ -12,6 +12,7 @@
 list-style: circle;
 padding: 0;
 
+
 }
 
 .LnItm{
@@ -19,4 +20,10 @@ padding: 0;
     padding-bottom: 20px;
     border-top: 1px solid rgb(255, 251, 245);
     cursor:pointer;
+}
+
+.LnItm:hover{
+    color: black;
+    background-color: white;
+
 }
